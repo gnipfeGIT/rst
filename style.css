@@ -15,6 +15,7 @@ body {
 }
 .header{
   color: white;
+  font-size: 24px;
 }
 
 .Punkte {
@@ -173,26 +174,16 @@ body{
   background-color: #4caf50;
   color: rgb(12, 11, 11);
 }
+.mobilegrid{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
 @media only screen and (max-width: 600px) {
   .nomobile{
     display: none;
     }
-    .mobilegrid {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
-      place-items: center;
-      gap: 0;
-      margin: auto;
-  }
-  .mobilegrid > a,
-  .mobilegrid > img,
-  .mobilegrid > a > img {
-    width: 80%;
-    display: grid;
-    place-items: center;
-    margin: auto;
-}
 }
 @media only screen and (min-width: 700px) {
   .nodesktop{
